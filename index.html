@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ee4d2d">
+<meta name="description" content="Achadinhos do Dia: produtos úteis, novidades e ofertas selecionadas de várias categorias. Confira na Shopee.">
+<title>Achadinhos do Dia | Ofertas selecionadas</title>
+<style>
+:root{--orange:#ee4d2d;--orange-dark:#c83b20;--ink:#252525;--muted:#686868;--bg:#fffaf8;--line:#f0e7e3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+header{background:var(--orange);color:#fff;padding:19px 0 17px}.header-row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{font-size:clamp(25px,4vw,34px);font-weight:850;letter-spacing:-1px}.tagline{font-size:14px;margin-top:3px;opacity:.95}
+.search{display:flex;gap:8px;max-width:370px;width:100%}.search input{min-width:0;flex:1;border:0;border-radius:9px;padding:12px 13px;font:inherit}.search button,.btn{border:0;border-radius:9px;padding:12px 15px;background:#fff;color:var(--orange-dark);font-weight:800;text-decoration:none;cursor:pointer}
+nav{background:white;border-bottom:1px solid var(--line)}.nav-row{display:flex;gap:9px;padding:11px 0;flex-wrap:wrap}nav a{text-decoration:none;font-size:13px;font-weight:700;background:#fff2ed;padding:8px 13px;border-radius:30px;color:#8f2b18}nav a:hover{background:#ffe1d7}
+.hero{padding:26px 0 8px}.hero-box{border-radius:20px;background:linear-gradient(115deg,#ffebe4,#fff 72%);border:1px solid #ffdbcf;padding:clamp(22px,4vw,38px);display:flex;align-items:center;justify-content:space-between;gap:20px;overflow:hidden}
+.eyebrow{display:inline-block;background:#ffd8ca;color:#9e2c17;border-radius:30px;padding:7px 11px;font-size:11px;font-weight:900;letter-spacing:.8px}.hero h1{font-size:clamp(29px,5vw,46px);line-height:1.08;letter-spacing:-1.2px;margin:14px 0 12px;max-width:660px}.hero p{color:var(--muted);line-height:1.65;max-width:640px;margin:0}.hero-art{font-size:clamp(65px,10vw,112px);flex-shrink:0;filter:drop-shadow(0 8px 7px #b83b2020)}
+main{padding:22px 0 8px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:16px 0}.section-head h2{font-size:25px;letter-spacing:-.5px;margin:0}.section-head p{font-size:13px;color:var(--muted);margin:6px 0 0}.count{font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.product{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 5px 18px #4a201008;transition:transform .15s,box-shadow .15s}.product:hover{transform:translateY(-3px);box-shadow:0 9px 24px #4a201012}
+.product-visual{height:154px;display:grid;place-items:center;background:linear-gradient(135deg,#fff1eb,#fffaf8);font-size:62px}.product-body{padding:15px;display:flex;flex-direction:column;flex:1}.category{font-size:10px;letter-spacing:.8px;text-transform:uppercase;font-weight:900;color:var(--orange)}.product h3{font-size:16px;line-height:1.35;margin:8px 0}.desc{font-size:13px;color:var(--muted);line-height:1.5;flex:1;margin:0}.price{font-size:20px;font-weight:850;margin:14px 0 2px}.price-note{font-size:11px;color:#777;margin-bottom:12px}.btn{display:block;text-align:center;background:var(--orange);color:white;padding:12px 10px}.btn:hover{background:var(--orange-dark)}.placeholder-note{font-size:10px;color:#8a7770;margin-top:8px}
+.notice{margin:25px 0 10px;padding:16px 17px;background:#fff;border:1px solid var(--line);border-radius:12px;color:#665c58;font-size:12px;line-height:1.65}.notice strong{color:#332b28}
+footer{margin-top:28px;background:#292321;color:#f7eae5;padding:25px 0;text-align:center;font-size:12px;line-height:1.7}footer a{color:#fff}
+.empty{grid-column:1/-1;padding:35px;text-align:center;color:var(--muted);background:#fff;border-radius:12px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-art{font-size:70px}.product-visual{height:140px}}
+@media(max-width:480px){.wrap{width:min(100% - 22px,1120px)}.search{max-width:none}.hero-box{align-items:flex-start}.hero-art{font-size:48px}.grid{gap:9px}.product-visual{height:108px;font-size:43px}.product-body{padding:11px}.product h3{font-size:14px}.desc{font-size:12px}.price{font-size:18px}.btn{font-size:12px;padding:11px 6px}.placeholder-note{font-size:9px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap header-row">
+    <div><div class="brand">🛍️ Achadinhos do Dia</div><div class="tagline">Boas descobertas para facilitar sua rotina.</div></div>
+    <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Buscar achadinhos..." aria-label="Buscar produtos"><button type="submit">Buscar</button></form>
+  </div>
+</header>
+<nav aria-label="Categorias"><div class="wrap nav-row">
+  <a href="#produtos" data-category="todos">Todos os achadinhos</a><a href="#produtos" data-category="casa">Casa</a><a href="#produtos" data-category="tecnologia">Tecnologia</a><a href="#produtos" data-category="beleza">Beleza</a><a href="#produtos" data-category="moda">Moda</a><a href="#produtos" data-category="utilidades">Utilidades</a>
+</div></nav>
+<section class="hero wrap"><div class="hero-box"><div><span class="eyebrow">ACHADOS • NOVIDADES • OFERTAS</span><h1>Pequenos achados, grandes ideias.</h1><p>Explore produtos de várias categorias, descubra ideias para o dia a dia e confira preços e disponibilidade diretamente na Shopee.</p></div><div class="hero-art" aria-hidden="true">🎁</div></div></section>
+<main class="wrap" id="produtos">
+  <div class="section-head"><div><h2>Achadinhos em destaque</h2><p>Seleção inicial — os exemplos devem ser substituídos por produtos reais e seus links de afiliado.</p></div><span class="count" id="count"></span></div>
+  <div class="grid" id="productGrid">
+    <article class="product" data-category="casa" data-search="organizador multiuso casa gaveta armário">
+      <div class="product-visual">🏠</div><div class="product-body"><span class="category">Casa</span><h3>Organizador multiuso</h3><p class="desc">Uma ideia prática para manter gavetas, armários e bancadas em ordem.</p><div class="price">Confira o preço</div><div class="price-note">Preço atualizado na Shopee</div><a class="btn affiliate-link" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver na Shopee ↗</a><div class="placeholder-note">Substitua pelo seu link de afiliado.</div></div>
+    </article>
+    <article class="product" data-category="tecnologia" data-search="suporte celular tecnologia mesa vídeos">
+      <div class="product-visual">📱</div><div class="product-body"><span class="category">Tecnologia</span><h3>Suporte para celular</h3><p class="desc">Acessório compacto para chamadas de vídeo, receitas e uso na mesa.</p><div class="price">Confira o preço</div><div class="price-note">Preço atualizado na Shopee</div><a class="btn affiliate-link" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver na Shopee ↗</a><div class="placeholder-note">Substitua pelo seu link de afiliado.</div></div>
+    </article>
+    <article class="product" data-category="beleza" data-search="necessaire organizadora beleza maquiagem cuidados">
+      <div class="product-visual">🧴</div><div class="product-body"><span class="category">Beleza</span><h3>Nécessaire organizadora</h3><p class="desc">Para guardar maquiagem, itens de cuidados pessoais e acessórios.</p><div class="price">Confira o preço</div><div class="price-note">Preço atualizado na Shopee</div><a class="btn affiliate-link" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver na Shopee ↗</a><div class="placeholder-note">Substitua pelo seu link de afiliado.</div></div>
+    </article>
+    <article class="product" data-category="moda" data-search="bolsa casual moda acessório">
+      <div class="product-visual">👜</div><div class="product-body"><span class="category">Moda</span><h3>Bolsa casual</h3><p class="desc">Uma opção versátil para combinar com diferentes looks do dia a dia.</p><div class="price">Confira o preço</div><div class="price-note">Preço atualizado na Shopee</div><a class="btn affiliate-link" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver na Shopee ↗</a><div class="placeholder-note">Substitua pelo seu link de afiliado.</div></div>
+    </article>
+    <article class="product" data-category="utilidades" data-search="garrafa reutilizável utilidade água rotina">
+      <div class="product-visual">🥤</div><div class="product-body"><span class="category">Utilidades</span><h3>Garrafa reutilizável</h3><p class="desc">Uma companheira para levar água ao trabalho, passeio ou treino.</p><div class="price">Confira o preço</div><div class="price-note">Preço atualizado na Shopee</div><a class="btn affiliate-link" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver na Shopee ↗</a><div class="placeholder-note">Substitua pelo seu link de afiliado.</div></div>
+    </article>
+    <article class="product" data-category="casa" data-search="luminária led casa iluminação decoração">
+      <div class="product-visual">💡</div><div class="product-body"><span class="category">Casa</span><h3>Luminária decorativa</h3><p class="desc">Uma forma simples de criar um cantinho mais aconchegante.</p><div class="price">Confira o preço</div><div class="price-note">Preço atualizado na Shopee</div><a class="btn affiliate-link" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver na Shopee ↗</a><div class="placeholder-note">Substitua pelo seu link de afiliado.</div></div>
+    </article>
+    <article class="product" data-category="tecnologia" data-search="cabo carregador tecnologia acessório celular">
+      <div class="product-visual">🔌</div><div class="product-body"><span class="category">Tecnologia</span><h3>Acessório para celular</h3><p class="desc">Compare avaliações, compatibilidade e especificações antes de comprar.</p><div class="price">Confira o preço</div><div class="price-note">Preço atualizado na Shopee</div><a class="btn affiliate-link" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver na Shopee ↗</a><div class="placeholder-note">Substitua pelo seu link de afiliado.</div></div>
+    </article>
+    <article class="product" data-category="utilidades" data-search="bolsa organizadora viagem utilidades">
+      <div class="product-visual">🧳</div><div class="product-body"><span class="category">Utilidades</span><h3>Organizador de viagem</h3><p class="desc">Ajuda a separar roupas e acessórios dentro da mala ou mochila.</p><div class="price">Confira o preço</div><div class="price-note">Preço atualizado na Shopee</div><a class="btn affiliate-link" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver na Shopee ↗</a><div class="placeholder-note">Substitua pelo seu link de afiliado.</div></div>
+    </article>
+  </div>
+  <div class="notice"><strong>Transparência:</strong> Achadinhos do Dia é uma vitrine independente e não é a loja oficial da Shopee. Alguns links podem gerar comissão para o responsável pela página, sem custo extra para o comprador. Os produtos e botões desta versão são exemplos: antes de divulgar, insira seus links de afiliado reais e confira as regras do programa.</div>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Achadinhos do Dia<br>Vitrine independente de produtos e ofertas. Preços, frete e disponibilidade são definidos pela loja de destino.</div></footer>
+<script>
+const input=document.getElementById('searchInput'), cards=[...document.querySelectorAll('.product')], count=document.getElementById('count');
+let active='todos';
+function filterCards(){const term=input.value.toLocaleLowerCase('pt-BR').trim();let shown=0;cards.forEach(card=>{const category=card.dataset.category;const hay=(card.dataset.search+' '+card.innerText).toLocaleLowerCase('pt-BR');const ok=(active==='todos'||active===category)&&hay.includes(term);card.style.display=ok?'flex':'none';if(ok)shown++;});let empty=document.getElementById('emptyMessage');if(!shown&&!empty){empty=document.createElement('div');empty.id='emptyMessage';empty.className='empty';empty.textContent='Nenhum achadinho encontrado. Tente outra busca.';document.getElementById('productGrid').appendChild(empty)}else if(shown&&empty)empty.remove();count.textContent=shown+' produto(s)';}
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();filterCards()});
+input.addEventListener('input',filterCards);
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{active=a.dataset.category;filterCards()}));
+document.getElementById('year').textContent=new Date().getFullYear();filterCards();
+</script>
+</body>
+</html>
